@@ -3,6 +3,8 @@ import joblib
 import numpy as np
 import pandas as pd
 import os
+import matplotlib.pyplot as plt
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 
 st.set_page_config(
     page_title="Predicción de Supervivencia - Cirrosis",
@@ -161,12 +163,12 @@ def main():
         
         st.markdown("### Matriz de Confusión")
         cm = metrics['confusion_matrix']
-        cm_data = pd.DataFrame(
-            [[cm['TN'], cm['FP']], [cm['FN'], cm['TP']]],
-            index=['Actual: Supervivencia', 'Actual: Muerte'],
-            columns=['Predicho: Supervivencia', 'Predicho: Muerte']
-        )
-        st.dataframe(cm_data, use_container_width=True)
+        
+        fig, ax = plt.subplots()
+        cm_array = np.array([[cm['TN'], cm['FP']], [cm['FN'], cm['TP']]])
+        conf_matrix = ConfusionMatrixDisplay(confusion_matrix=cm_array, display_labels=['Supervivencia', 'Muerte'])
+        conf_matrix.plot(ax=ax, cmap='Blues')
+        st.pyplot(fig)
         
         c1, c2, c3, c4 = st.columns(4)
         with c1:

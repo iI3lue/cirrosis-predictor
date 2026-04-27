@@ -10,7 +10,7 @@ st.set_page_config(
     layout="wide"
 )
 
-MODEL_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_DIR = os.path.dirname(os.path.realpath(__file__))
 
 MODELOS = {
     'logistic': {

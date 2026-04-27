@@ -164,7 +164,7 @@ def main():
         st.markdown("### Matriz de Confusión")
         cm = metrics['confusion_matrix']
         
-        fig, ax = plt.subplots()
+        fig, ax = plt.subplots(figsize=(5, 4))
         cm_array = np.array([[cm['TN'], cm['FP']], [cm['FN'], cm['TP']]])
         conf_matrix = ConfusionMatrixDisplay(confusion_matrix=cm_array, display_labels=['Supervivencia', 'Muerte'])
         conf_matrix.plot(ax=ax, cmap='Blues')

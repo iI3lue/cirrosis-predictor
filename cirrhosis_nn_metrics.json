@@ -1,23 +1,22 @@
 {
-  "accuracy": 0.7469879518072289,
-  "precision": 0.6578947368421053,
-  "recall": 0.7575757575757576,
-  "f1_score": 0.704225352112676,
-  "sensitivity": 0.7575757575757576,
-  "specificity": 0.74,
+  "accuracy": 0.6867469879518072,
+  "precision": 0.7073170731707317,
+  "recall": 0.6744186046511628,
+  "f1_score": 0.6904761904761905,
+  "sensitivity": 0.6744186046511628,
+  "specificity": 0.7,
   "confusion_matrix": {
-    "TP": 25,
-    "TN": 37,
-    "FP": 13,
-    "FN": 8
+    "TP": 29,
+    "TN": 28,
+    "FP": 12,
+    "FN": 14
   },
   "best_params": {
-    "learning_rate": "adaptive",
     "hidden_layer_sizes": [
-      64
+      32
     ],
-    "alpha": 0.001,
-    "activation": "relu"
+    "alpha": 0.01,
+    "activation": "tanh"
   },
-  "best_cv_score": 0.7669070512820513
+  "best_cv_score": 0.7875
 }

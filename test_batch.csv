@@ -1,0 +1,6 @@
+ID,N_Days,Status,Drug,Age,Sex,Ascites,Hepatomegaly,Spiders,Edema,Bilirubin,Cholesterol,Albumin,Copper,Alk_Phos,SGOT,Tryglicerides,Platelets,Prothrombin,Stage
+9991,400,D,D-penicillamine,58,F,Y,Y,Y,Y,14.5,261.0,2.6,156.0,1718.0,137.95,172.0,190.0,12.2,4
+9992,3400,C,Placebo,45,F,N,N,N,N,1.1,230.0,3.5,50.0,1100.0,80.0,100.0,250.0,10.5,2
+9993,1200,CL,D-penicillamine,62,M,N,Y,N,S,2.5,310.0,3.0,80.0,1500.0,110.0,140.0,210.0,11.0,3
+9994,800,D,Placebo,55,F,Y,Y,N,Y,8.2,400.0,2.4,200.0,2000.0,150.0,180.0,120.0,13.0,4
+9995,2500,C,D-penicillamine,38,F,N,N,N,N,0.8,190.0,4.1,30.0,800.0,65.0,90.0,320.0,9.8,1
